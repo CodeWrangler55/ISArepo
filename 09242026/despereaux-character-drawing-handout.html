@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Despereaux Character Drawing Handout</title>
+<style>
+  :root { --ink:#1f2933; --accent:#1f6f8b; --soft:#eef6f8; --line:#aab7c4; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#f2f5f7; color:var(--ink); font-family:Arial,Helvetica,sans-serif; }
+  .page { width:min(8.5in,100%); min-height:11in; margin:18px auto; background:white; padding:.45in .55in; box-shadow:0 6px 24px rgba(0,0,0,.12); }
+  h1 { margin:0; color:var(--accent); font-size:27px; }
+  .sub { margin:5px 0 12px; font-size:14px; color:#51606f; }
+  .name { text-align:right; font-weight:700; margin-top:-28px; margin-bottom:18px; }
+  .directions { background:var(--soft); border-left:5px solid var(--accent); padding:10px 12px; margin:10px 0 14px; font-size:15px; line-height:1.4; }
+  .question { border:2px solid var(--accent); padding:12px; font-size:20px; font-weight:700; text-align:center; margin:14px 0; }
+  .draw-box { height:5.1in; border:2px solid var(--line); margin:14px 0 16px; position:relative; background:#fff; }
+  .draw-box::before { content:"Draw Despereaux showing what makes him different."; position:absolute; top:10px; left:12px; color:#667789; font-size:14px; }
+  .trait-bank { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin:10px 0 14px; }
+  .trait { border:1px solid var(--line); background:#fbfcfd; padding:8px; text-align:center; font-weight:700; }
+  .sentence { border:1px solid var(--line); padding:12px; font-size:18px; line-height:1.6; }
+  .blank { display:inline-block; width:2.1in; border-bottom:1.5px solid #333; transform:translateY(-3px); }
+  @media print {
+    body { background:white; }
+    .page { margin:0; box-shadow:none; width:100%; min-height:11in; }
+  }
+</style>
+</head>
+<body>
+<section class="page">
+  <h1>The Tale of Despereaux</h1>
+  <p class="sub">Chapters 1-8 — Character Traits</p>
+  <div class="name">Name: __________________________</div>
+
+  <div class="directions">
+    <strong>Directions:</strong> Think about how Despereaux is different from other mice. Draw a scene that shows one of his unusual traits. Then complete the sentence at the bottom.
+  </div>
+
+  <div class="question">What makes Despereaux different from other mice?</div>
+
+  <div class="trait-bank">
+    <div class="trait">brave</div>
+    <div class="trait">curious</div>
+    <div class="trait">gentle</div>
+    <div class="trait">unusual</div>
+  </div>
+
+  <div class="draw-box"></div>
+
+  <div class="sentence">
+    Despereaux is <span class="blank"></span> because <span class="blank"></span>.
+  </div>
+</section>
+</body>
+</html>
